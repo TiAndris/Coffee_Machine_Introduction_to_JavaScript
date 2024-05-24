@@ -1,0 +1,30 @@
+content:
+  - Comments
+  - Strings and numbers
+  - Variables
+  - Functions
+  - Introduction to Objects
+  - Boolean and Logical Operators
+  - Conditional Operators
+  - Basic string methods
+  - Naming variables
+  - Defining functions
+  - Anonymous Function
+  - Arrow Functions
+  - Object methods and keyword  this
+  - Function constructor
+  - Scope of variables
+  - Introduction to Arrays
+  - Array creation
+  - Array iterating
+  - Switch
+  - Increment and Decrement
+  - For Loops
+  - While Loops
+  - Break and Continue
+  - Template literals
+  - ForEach method
+  - Array searching
+  - Array transforming
+  - Array slicing
+  - Array sorting

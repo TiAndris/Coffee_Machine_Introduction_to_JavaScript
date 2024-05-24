@@ -1,0 +1,17 @@
+type: code
+files:
+  - name: main.js
+    visible: true
+    highlight_level: NONE
+    text: |-
+      function multiplyThem(numbers) {
+          console.log(...);
+      }
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/16914#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Tue, 10 Oct 2023 09:39:30 UTC"
+record: -1
+submission_language: javascript

@@ -1,0 +1,45 @@
+<h2>Arrow Functions</h2>
+<div class="step-text">
+<p></p>
+<p style="text-align: justify;">When writing a calculator program in JavaScript, functions can be used to develop its functionality. These functions can be written using the syntax we already know. For example, here is a function for adding two numbers:</p>
+<pre><code class="language-javascript">function append(a, b) {
+  result = a + b;
+  return result;
+}
+</code></pre>
+<p style="text-align: justify;">JavaScript has a shorter and more convenient way to write functions — <strong>arrow functions</strong>. Here is the same example as above written with the arrow functions syntax:</p>
+<pre><code class="language-javascript">let append = (a, b) =&gt; a + b;
+</code></pre>
+<p style="text-align: justify;">We don't just declare a function, but we are also storing it in a variable. An arrow function can be used as an ordinary function:</p>
+<pre><code class="language-javascript">let result = append(30, 5)
+console.log(result) // 35
+</code></pre>
+<h5 id="setting-arrow-functions">Setting arrow functions</h5>
+<p style="text-align: justify;">You can use two methods to assign arrow functions:</p>
+<pre><code class="language-javascript">let append = (a, b) =&gt; a + b; // short syntax</code></pre>
+<p>And:</p>
+<pre><code class="language-javascript">let append = (a, b) =&gt; { return a + b; }; // block syntax
+</code></pre>
+<p>Unlike parentheses, the main difference is that curly braces allow us to write multiline instructions inside a function. However, remember that when using this method, you must specify a <code class="language-javascript">return</code> directive to return the value.</p>
+<p>If there is one parameter in your function, you do not need to frame it with parentheses. For example:</p>
+<pre><code class="language-javascript">let sum = a =&gt; a + 2;
+sum(1);  // 3</code></pre>
+<p>At the same time, parentheses are required in functions without parameters.</p>
+<p></p><div class="alert alert-primary">Arrow functions are anonymous functions. Therefore, you cannot call them before initialization.</div>
+<h5 id="comparison">Comparison</h5>
+<p>Let's create some functions using traditional syntax, block arrow function syntax, and short arrow function syntax and compare them:</p>
+<pre><code class="language-javascript">function mult1(a, b) {
+  return a * b;
+}
+let mult2 = (a, b) =&gt; { return a * b; };
+let mult3 = (a, b) =&gt; a * b;
+
+console.log(mult1(3, 2)) // 6
+console.log(mult2(3, 2)) // 6
+console.log(mult3(3, 2)) // 6
+</code></pre>
+<p style="text-align: justify;">As you can see, the results of all these functions are identical, but the shorter syntax of the arrow function makes it more convenient to write.</p>
+<p></p><div class="alert alert-primary"> Using a tool appropriate for the particular problem is essential. Don't use Arrow functions if you have code where all functions are written traditionally. Always think in terms of the existing code structure.</div>
+<h5 id="conclusion">Conclusion</h5>
+<p style="text-align: justify;">We considered Arrow functions and two ways of setting them in the topic. We checked that different methods yield the same results, but some are more convenient. Be wise about this new knowledge, and good luck with the practice tasks!</p>
+</div>

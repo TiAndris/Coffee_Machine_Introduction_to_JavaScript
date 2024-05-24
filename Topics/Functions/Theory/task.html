@@ -1,0 +1,59 @@
+<h2>Functions</h2>
+<div class="step-text">
+<p>Often, we need to repeat the same action multiple times in a script, such as summarizing different data entered by users or displaying pop-ups with product descriptions for an online store. <strong>Functions</strong> are used to avoid code duplication and better structure large programs. They help break down complex programs into smaller and more manageable parts.</p>
+<p>Functions in JavaScript can be <strong>built-in </strong>or <strong>user-defined</strong>; in other words, they can be explicitly created by the programmer. You have already worked with the built-in function — <code class="language-javascript">console.log()</code>. Today, you will learn how to create your own.</p>
+<h5 id="basic-syntax">Basic syntax</h5>
+<p>Take a look at the syntax of how we create functions:</p>
+<pre><code class="language-javascript">function name(parameters) {
+   // function body 
+}</code></pre>
+<p>To create a function, you need to write the <code class="language-javascript">function</code> keyword, come up with a<strong> </strong>name for it, and open parentheses. You can specify the parameters in parentheses: data you want to send to the program. The function code, or the<strong> function body</strong>, must be written inside the curly brackets. </p>
+<p>Based on the pseudo-code above, let's write a function that outputs the following string: <code class="language-javascript">Find and book your ideal tour!</code></p>
+<pre><code class="language-javascript">function writeMessage() {
+   console.log("Find and book your ideal tour!");
+}</code></pre>
+<p>Our new function has an empty list of parameters and a name <code class="language-javascript">writeMessage</code>. Let's try calling this function. You need to write the function name and a pair of parentheses to do this.</p>
+<pre><code class="language-javascript">function writeMessage() {
+   console.log("Find and book your ideal tour!");
+}
+
+writeMessage(); // Find and book your ideal tour!</code></pre>
+<p>The call of <code class="language-javascript">writeMessage()</code> executes the code written in the function body. The function can be called more than once:</p>
+<pre><code class="language-javascript">function writeMessage() {
+   console.log("Find and book your ideal tour!");
+}
+
+writeMessage(); // Find and book your ideal tour!
+writeMessage(); // Find and book your ideal tour!</code></pre>
+<p>Here, we display the message to the console twice. We can display it three, four, or even a hundred times.</p>
+<p>The function can be called anywhere in the file. You can call the function both before and after its creation.</p>
+<pre><code class="language-javascript">writeMessage(); // Find and book your ideal tour!
+
+function writeMessage() {
+   console.log("Find and book your ideal tour!");
+}
+
+writeMessage(); // Find and book your ideal tour!</code></pre>
+<p>The ability to call a function before its creation is due to the peculiarities of JS file processing by browsers: the browser first goes through the whole code, finds all functions, and only then starts executing the code.</p>
+<h5 id="parameters">Parameters</h5>
+<p>In the previous examples, we left the parameters unattended: let's get back to that. We can transfer any information inside the function using the parameters. Let's try to pass two arguments to the function: <code class="language-javascript">a</code> and <code class="language-javascript">b</code>.</p>
+<pre><code class="language-javascript">function quotient(a, b) {
+  console.log(a / b);
+}
+
+quotient(10, 5); // 2
+quotient(6, 2);  // 3</code></pre>
+<p>We called the function by passing the values that were copied into variables <code class="language-javascript">a</code> and <code class="language-javascript">b</code>, and used in the function body.</p>
+<h5 id="returning-a-value"><em> </em>Returning a value</h5>
+<p>In JS, it is possible to return the function result using the <code class="language-javascript">return</code> statement:</p>
+<pre><code class="language-javascript">function multiply(a, b) {
+  return a * b;
+}
+
+let result = multiply(10, 2);
+console.log(result); // 20</code></pre>
+<p>The <code class="language-javascript">return</code> can be located anywhere in the function's body. Once the code's execution reaches the point of return (pun intended), the function stops, and the value returns to the code called it.</p>
+<p>For now, you might doubt that <code class="language-javascript">return</code> is worth your while, but bear with it: when you write larger and more complex functions, you will find this helpful operator.</p>
+<h5 id="conclusion">Conclusion</h5>
+<p>Functions are an essential tool in JavaScript that helps to break down complex programs into smaller and manageable parts. With functions, you can avoid code duplication and improve the structure of your code. In JavaScript, functions can be either built-in or user-defined and can be called anywhere in the file. You can also pass parameters to a function to transfer any necessary information, and you can return a value using the return statement. You can quickly and efficiently write larger and more complex programs by mastering functions.</p>
+</div>

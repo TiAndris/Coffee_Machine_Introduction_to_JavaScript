@@ -1,0 +1,28 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: "<pre><code class=\"language-js\">/* This is the first line of the comment\r\
+    \   This is the second line of the comment */</code></pre>"
+  - text: "<pre><code class=\"language-js\">// This is the first line of the comment\r\
+    // This is the second line of the comment</code></pre>"
+  - text: "<pre><code class=\"language-js\"># This is the first line of the comment\r\
+    # This is the second line of the comment</code></pre>"
+  - text: "<pre><code class=\"language-js\">&lt;!-- This is the first line of the comment\r\
+    \     This is the second line of the comment --&gt;</code></pre>"
+files:
+  - name: main.js
+    visible: true
+    text: |+
+      // You can experiment here, it won’t be checked
+    
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/30672#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Wed, 06 Sep 2023 08:18:23 UTC"
+record: -1
+selected_options:
+  - 1
+  - 3
+local_check: false
